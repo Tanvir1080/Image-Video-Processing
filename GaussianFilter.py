@@ -67,8 +67,8 @@ def GaussianFilterParent(img, sigma, name):
     return Image.fromarray(removedNoise)
 
 def main():
-    img1 = Image.open("image1.png")
-    img2 = Image.open("image2.png")
+    img1 = Image.open("./Images/image1.png")
+    img2 = Image.open("./Images/image2.png")
 
     gauss1With3 = GaussianFilterParent(img1, 3, "Img1With3") 
     gauss1With5 = GaussianFilterParent(img1, 5, "Img1With5")

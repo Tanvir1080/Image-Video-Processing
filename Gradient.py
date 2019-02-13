@@ -87,8 +87,8 @@ def ForwardGradient(img, width, height):
     plt.show()
 
 def main():
-    img = Image.open("image3.png")
-    img3 = cv2.imread("image3.png")
+    img = Image.open("./Images/image3.png")
+    img3 = cv2.imread("./Images/image3.png")
     col, row = img.size
     CentralGradient(img3, col, row)
     BackwardGradient(img3, col, row)

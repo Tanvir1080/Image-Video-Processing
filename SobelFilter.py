@@ -48,8 +48,8 @@ def SobelFilterParent(img):
     
 
 def main():
-    img1 = Image.open("image1.png")
-    img2 = Image.open("image2.png")
+    img1 = Image.open("./Images/image1.png")
+    img2 = Image.open("./Images/image2.png")
 
     sob1 = SobelFilterParent(img1)
     sob2 = SobelFilterParent(img2)

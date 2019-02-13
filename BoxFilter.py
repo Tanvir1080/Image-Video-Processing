@@ -27,8 +27,8 @@ def BoxFilterParent(size, img):
     
     
 def main():
-    cvimg1 = Image.open("image1.png")
-    cvimg2 = Image.open("image2.png")
+    cvimg1 = Image.open("./Images/image1.png")
+    cvimg2 = Image.open("./Images/image2.png")
     
     box1With3 = BoxFilterParent(3, cvimg1)
     box1With5 = BoxFilterParent(5, cvimg1)

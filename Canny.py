@@ -345,31 +345,31 @@ def CannyParent(name, col, row, sigma):
     plt.show()
 
 def main(): 
-    canny1Img = Image.open("canny1.jpg")
-    canny2Img = Image.open("canny2.jpg") 
-    image1 = Image.open("image1.png")
-    image2 = Image.open("image2.png")
+    canny1Img = Image.open("./Images/canny1.jpg")
+    canny2Img = Image.open("./Images/canny2.jpg") 
+    image1 = Image.open("./Images/image1.png")
+    image2 = Image.open("./Images/image2.png")
 
     col1, row1 = canny1Img.size
     col2, row2 = canny2Img.size
     colImg1, rowImg1 = image1.size
     colImg2, rowImg2 = image2.size
     # Sigma = 1 works best for this assignment as it blurs the image the least
-    CannyParent("canny1.jpg", col1, row1, 1)
-    CannyParent("canny2.jpg", col2, row2, 1)
+    CannyParent("./Images/canny1.jpg", col1, row1, 1)
+    CannyParent("./Images/canny2.jpg", col2, row2, 1)
 
     # Show effects of changing sigma 
-    CannyParent("canny1.jpg", col1, row1, 3)
-    CannyParent("canny2.jpg", col2, row2, 3)
+    CannyParent("./Images/canny1.jpg", col1, row1, 3)
+    CannyParent("./Images/canny2.jpg", col2, row2, 3)
 
-    CannyParent("canny1.jpg", col1, row1, 5)
-    CannyParent("canny2.jpg", col2, row2, 5)
+    CannyParent("./Images/canny1.jpg", col1, row1, 5)
+    CannyParent("./Images/canny2.jpg", col2, row2, 5)
 
-    CannyParent("canny1.jpg", col1, row1, 10)
-    CannyParent("canny2.jpg", col2, row2, 10)
+    CannyParent("./Images/canny1.jpg", col1, row1, 10)
+    CannyParent("./Images/canny2.jpg", col2, row2, 10)
 
 
-    CannyParent("image1.png", colImg1, rowImg1, 1)
-    CannyParent("image2.png", colImg2, rowImg2, 1)
+    CannyParent("./Images/image1.png", colImg1, rowImg1, 1)
+    CannyParent("./Images/image2.png", colImg2, rowImg2, 1)
 
 main()

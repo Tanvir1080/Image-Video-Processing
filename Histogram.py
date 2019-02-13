@@ -53,7 +53,7 @@ def HistogramParent(img, binSize, col, row):
     Histogram(arr, binSize, col, row)
 
 def main(): 
-    img4 = Image.open("image4.png")
+    img4 = Image.open("./Images/image4.png")
     col, row = img4.size
 
     HistogramParent(img4, 256, col, row)
